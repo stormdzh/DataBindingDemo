@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/mSimpleDraweeView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+
+    <TextView
+        android:id="@+id/tvTestDataBinding"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Databinding使用"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvLiveDataDataBinding"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="LiveDatabinding使用"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/tvEntityLiveDataDataBinding"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="EntityLiveDatabinding使用"
+        android:textColor="#000000" />
+    <TextView
+        android:id="@+id/tvPicLiveDataDataBinding"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="PicLiveDatabinding使用"
+        android:textColor="#000000" />
+
+
+</LinearLayout>

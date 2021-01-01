@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="liveData"
+            type="androidx.lifecycle.MutableLiveData&lt;com.stormdzh.myapplication.Person>" />
+
+        <variable
+            name="eventHandler"
+            type="com.stormdzh.myapplication.LiveDataEntityBindingActivity.OnEventHandler" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:onClick="@{(v)->eventHandler.onClick(v)}"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#543298"
+            android:gravity="center"
+            android:text="更新数据"
+            android:textColor="#000000" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{liveData.name}"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+</layout>
